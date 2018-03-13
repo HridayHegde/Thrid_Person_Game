@@ -5,6 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/ThirdPersonControlOrbitCam.unity
+  - enabled: 0
+    path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Test Game/Menu_Scenes/Main_Menu.unity
+    guid: 7704186e75438b54baee31bd58ac6fa1
+  - enabled: 1
+    path: Assets/Test Game/Scene1.unity
+    guid: 8f5ac0c27f5054e47869f569fd7dc4e5

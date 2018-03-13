@@ -33,7 +33,7 @@ public class Random_Player_Systems : MonoBehaviour {
 		if (lockTar) {
 			if (NearestEnemy != null) {
 				NameOfNearestObject = NearestEnemy.name.ToString ();
-				//Player.transform.LookAt (new Vector3 (NearestEnemy.transform.position.x, Player.transform.position.y, NearestEnemy.transform.position.z));
+				Player.transform.LookAt (new Vector3 (NearestEnemy.transform.position.x, Player.transform.position.y, NearestEnemy.transform.position.z));
 
 				
 			}

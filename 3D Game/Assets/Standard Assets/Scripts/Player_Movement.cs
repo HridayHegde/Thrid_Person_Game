@@ -54,46 +54,47 @@ public class Player_Movement : MonoBehaviour {
 		left = Input.GetKey (KeyCode.A);
 		right = Input.GetKey (KeyCode.D);
 
-//		if (rps.lockTar) {
-//			anim.SetFloat ("Movement", 0f);
-//			anim.SetBool ("Sprint", false);
-//			if (right) {
-//				TarLockRight = true;
-//			
-//			} else {
-//				TarLockRight = false;
-//			}
-//
-//			if (left) {
-//				TarLockLeft = true;
-//			} else {
-//				TarLockLeft = false;
-//			
-//			}
-//			if (forward) {
-//				TarLockFwd = true;
-//			
-//			} else {
-//				TarLockFwd = false;
-//			}
-//			if (back) {
-//				TarLockBck = true;
-//			} else {
-//				TarLockBck = false;
-//			
-//			}
-//		
-//
-//			anim.SetBool ("TarLock_Right", TarLockRight);
-//			anim.SetBool ("TarLock_Left", TarLockLeft);
-//			anim.SetBool ("TarLock_Front", TarLockFwd);
-//			anim.SetBool ("TarLock_Back", TarLockBck);
-		//}
-		//anim.SetBool ("TarLock", rps.lockTar);
-
 		if (rps.lockTar) {
-			//Region
-			anim.SetBool ("TarLock_Right", false);
+			anim.SetFloat ("Movement", 0f);
+			anim.SetBool ("Sprint", false);
+			if (right) {
+				TarLockRight = true;
+			
+			} else {
+				TarLockRight = false;
+			}
+
+			if (left) {
+				TarLockLeft = true;
+			} else {
+				TarLockLeft = false;
+			
+			}
+			if (forward) {
+				TarLockFwd = true;
+			
+			} else {
+				TarLockFwd = false;
+			}
+			if (back) {
+				TarLockBck = true;
+			} else {
+				TarLockBck = false;
+			
+			}
+		
+
+			
+		}
+		anim.SetBool ("TarLock", rps.lockTar);
+        anim.SetBool("TarLock_Right", TarLockRight);
+        anim.SetBool("TarLock_Left", TarLockLeft);
+        anim.SetBool("TarLock_Front", TarLockFwd);
+        anim.SetBool("TarLock_Back", TarLockBck);
+
+        if (!rps.lockTar) {
+        //Region
+            anim.SetBool ("TarLock_Right", false);
 			anim.SetBool ("TarLock_Left", false);
 			anim.SetBool ("TarLock_Front", false);
 			anim.SetBool ("TarLock_Back", false);
